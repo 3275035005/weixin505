@@ -1,0 +1,35 @@
+<view class="header-box">
+
+	<view>
+		<van-picker columns="{{ titleList }}" bind:change="selectFloor" visible-item-count="3" />
+	</view>
+	
+	<view class="header-tab">
+		<ye-tab tab-list="{{tabList}}" font-size="32rpx" lrPadding="100rpx" bind:select="selectStatus"></ye-tab>
+	</view>
+</view>
+
+
+<block wx:for="{{feedbackList}}" wx:key="applyData">
+	<view class="card-item">
+		<view class="item-content border-bottom">
+			<view class="right-box">
+				<text class="floor">反馈内容：{{item.content}}</text>
+				<text class="floor">反馈时间: {{item.createTime}}</text>
+				<van-tag class="van-tag1" color="{{item.status === '0' ? '#ff976a' : '#07c160'}}">{{item.status === '0' ? '未回复' : '已回复'}}</van-tag>
+				<text class="date">{{item.createTime}}</text>
+			</view>
+		</view>
+		<view class="item-footer">
+			<text data-id="{{item.id}}" bindtap="navDetail">查看详情</text>
+		</view>
+	</view>
+</block>
+
+
+<!-- nothing -->
+<view wx:if="{{feedbackList == ''}}" style="text-align: center;">
+    <image src="/images/page_nothing.svg" />
+    <view>暂无数据</view>
+</view>
+<!-- nothing -->

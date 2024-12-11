@@ -1,0 +1,30 @@
+<!--首页页面-->
+<view class="BiaoTi">
+  <image src="/static/标题.jpg" mode="heightFix"></image>
+</view>
+<view class='home_ZhongBu'>
+  <view class='home_ZhongBu_zong'>
+    <image class="home_ZhongBu_image1" bindtap="home_bingtap_image1" src='/static/问题收集.png' />
+    <text bindtap="home_bingtap_image1" class="home_ZhongBu_text">提交新反馈</text>
+  </view>
+  <view class='home_ZhongBu_zong'>
+    <image class="home_ZhongBu_image2" bindtap="home_bingtap_image2" src='/static/列表.png' />
+    <text bindtap="home_bingtap_image2" class="home_ZhongBu_text">反馈列表</text>
+  </view>
+  <view class='home_ZhongBu_zong'>
+    <image class="home_ZhongBu_image3" bindtap="home_bingtap_image3" src='/static/个人中心.png' />
+    <text bindtap="home_bingtap_image3" class="home_ZhongBu_text">个人中心</text>
+  </view>
+</view>
+<view class='home_ZhongBu'>
+  <view class='home_ZhongBu_zong'>
+    <image class="home_ZhongBu_image4" bindtap="home_bingtap_image4" src='/static/问卷调查.png' />
+    <text bindtap="home_bingtap_image4" class="home_ZhongBu_text">问卷调查</text>
+  </view>
+  <view class='home_ZhongBu_zong'>
+    <image class="home_ZhongBu_image5" bindtap="home_bingtap_image5" src='/static/建议.png' />
+    <text bindtap="home_bingtap_image5" class="home_ZhongBu_text">复习建议</text>
+  </view>
+  <view class='home_ZhongBu_zong'>
+  </view>
+</view>

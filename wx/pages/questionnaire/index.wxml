@@ -1,0 +1,84 @@
+<!-- banner -->
+<view class="banner">
+
+<!-- swiper -->
+<image src="{{pic}}" class="banner_image" />
+<!-- swiper -->
+
+<!-- dot -->
+<view class="dot">
+  <view class="item {{current == index?'active':''}}" wx:for="{{banner}}" wx:key="index" ></view>
+</view>
+<!-- dot -->
+
+</view>
+<!-- banner -->
+
+
+<!-- message -->
+<view class="message">
+<image src="/images/notice.svg" class="icon" />
+<view class="item">{{title}}</view>
+</view>
+<!-- message -->
+
+
+<!-- form -->
+<view class="page_form">
+<view class="box">
+  <!-- item -->
+  <view class="item">
+    <view class="title">姓名</view>
+    <view class="content">
+      <input type="text" placeholder="请填写姓名"  bindinput="setName" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <!-- item -->
+  <!-- item -->
+  <view class="item arrow">
+    <view class="title">性别</view>
+    <view class="content">
+      <picker value="{{sex_Index}}" range="{{sex_Screen}}" bindchange="sex_Change">
+        {{sex_Screen[sex_Index]}}
+      </picker>
+    </view>
+  </view>
+  <!-- item -->
+  <!-- item -->
+  <view class="item">
+    <view class="title">联系电话</view>
+    <view class="content">
+      <input type="text" placeholder="请填写联系电话" bindinput="setPhone" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <!-- item -->
+  <!-- item -->
+  <view class="item arrow">
+    <view class="title">专业技能</view>
+    <view class="content">
+      <picker value="{{skill_Index}}" range="{{skill_Screen}}" bindchange="skill_Change">
+        {{skill_Screen[skill_Index]}}
+      </picker>
+    </view>
+  </view>
+  <!-- item -->
+
+
+
+    <!-- item -->
+    <view class="item">
+    <view class="title">意见</view>
+    <view class="content">
+      <input type="text" placeholder="请填写您的意见" bindinput="setOpinion" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <!-- item -->
+</view>
+</view>
+<!-- form -->
+
+<!-- btn -->
+<view class="page_button" style="margin:50rpx 50rpx 0rpx 50rpx">
+    <button size="default"  bindtap="sub">提交问卷</button>
+</view>
+<!-- btn -->

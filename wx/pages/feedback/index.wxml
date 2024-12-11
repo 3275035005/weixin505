@@ -1,0 +1,68 @@
+<!-- banner -->
+<view class="banner">
+
+<!-- swiper -->
+<image src="{{pic}}" class="banner_image" />
+<!-- swiper -->
+
+<!-- dot -->
+<view class="dot">
+  <view class="item {{current == index?'active':''}}" wx:for="{{banner}}" wx:key="index" ></view>
+</view>
+<!-- dot -->
+
+</view>
+<!-- banner -->
+
+
+<!-- message -->
+<view class="message">
+<image src="/images/notice.svg" class="icon" />
+<view class="item">{{title}}</view>
+</view>
+<!-- message -->
+
+
+<!-- form -->
+<view class="page_form">
+<view class="box">
+  <!-- item -->
+  <view class="item">
+    <view class="title">反馈内容</view>
+    <view class="content">
+      <input type="text" placeholder="请填写反馈内容"  bindinput="setContent" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <!-- item -->
+  <view class="item">
+    <view class="title">姓名</view>
+    <view class="content">
+      <input type="text" placeholder="请填写姓名" bindinput="setName" placeholder-class="placeholder"/>
+    </view>
+  </view>
+    <!-- item -->
+    <view class="item">
+    <view class="title">联系方式</view>
+    <view class="content">
+      <input type="text" placeholder="请填写联系电话" bindinput="setContact" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <!-- item -->
+  <view class="item arrow">
+    <view class="title">反馈类型</view>
+    <view class="content">
+      <picker value="{{title_Index}}" range="{{title_Screen}}" bindchange="title_Change">
+        {{title_Screen[title_Index]}}
+      </picker>
+    </view>
+  </view>
+  <!-- item -->
+</view>
+</view>
+<!-- form -->
+
+<!-- btn -->
+<view class="page_button" style="margin:50rpx 50rpx 0rpx 50rpx">
+    <button size="default"  bindtap="sub">提交反馈</button>
+</view>
+<!-- btn -->

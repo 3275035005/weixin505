@@ -1,0 +1,44 @@
+{
+    "lazyCodeLoading": "requiredComponents",
+    "pages": [
+        "pages/index/index",
+        "pages/register/index",
+        "pages/detail/detail",
+        "pages/suggestion/suggestion",
+        "pages/questionnaire/index",
+        "pages/myself/myself",
+        "pages/feedback/index",
+        "pages/list/index",
+        "pages/login/index",
+        "pages/about/index",
+        "pages/personage/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ddd",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "教学反馈系统"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/home (1).png"
+            },
+            {
+                "pagePath": "pages/feedback/index",
+                "text": "问题反馈",
+                "iconPath": "static/tabbar/problem.png",
+                "selectedIconPath": "static/tabbar/problem(1).png"
+            },
+            {
+                "pagePath": "pages/myself/myself",
+                "text": "我的",
+                "iconPath": "static/tabbar/me.png",
+                "selectedIconPath": "static/tabbar/me(1).png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

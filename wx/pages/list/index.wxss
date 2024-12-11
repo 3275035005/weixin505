@@ -1,0 +1,31 @@
+@import './card.wxss';
+
+.header-box {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.header-tab {
+  padding: 10rpx 0;
+  background-color: var(--color-white);
+}
+
+/* number */
+ .item .number{border-bottom: 1rpx solid #efefef; padding: 28rpx 32rpx; font-size: 28rpx;}
+ .item .number text{color: #999;}
+ .item .state{margin-left: auto;}
+ .item .state.wait{color: #ccc;}
+ .item .state.pass{color: #33CC00;}
+ .item .state.refuse{color: #ff0000;}
+
+/* content */
+ .item .content{padding: 30rpx;}
+ .item .title{font-size: 32rpx; margin-bottom: 16rpx; font-weight: bolder;}
+ .item .dep{color: #999; font-size: 28rpx; margin-bottom: 16rpx;}
+ .item .date{color: #999; font-size: 30rpx;}
+ .item .why{color: #999; font-size: 30rpx; color: #ff0000;}
+
+/* info */
+ .item .info{border-top: 1rpx solid #efefef; padding: 20rpx 32rpx;}
+ .item .name{color: #999; font-size: 30rpx; margin-left: auto;}

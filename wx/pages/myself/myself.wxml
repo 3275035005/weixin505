@@ -1,0 +1,47 @@
+<import src="../template/template" />
+<view class="container">
+  <!-- 背景图片区域 -->
+  <view class="bgcImage">
+    <!-- 用户信息区域 -->
+    <view class="userInfo">
+      <!-- 头像 -->
+      <view class="userAvatar">
+        <image src="{{info.avatar}}" class="user_info__image" />
+        <!-- <open-data type="userAvatarUrl"></open-data> -->
+      </view>
+
+      <!-- Txt -->
+      <view class="userInfoTxt">
+    
+        <view class="userAcademy">
+          <view class="guestAcademy">{{info.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 班级/专业Dialog -->
+    <view class="userInfoDialog">
+      <block>
+        <view class="userInfo_item">
+        <image src="images/class.png"></image>
+         <text class="title">班级</text>
+           <text>{{info.banji}}</text>
+        </view>
+        <view class="userInfo_item">
+        <image src="images/class.png"></image>
+         <text class="title">专业</text>
+           <text>{{info.zhuanye}}</text>
+      </view>
+      </block>
+    </view>
+  </view>
+  <!--  关于我们...Dialog -->
+  <view class="more">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="userInfo_item" catchtap="{{item.click}}">
+    <image src="{{item.icon}}"></image>
+    <text class="title">{{item.title}}</text>
+    <text>{{item.littleTitle}}</text>
+  </view>
+    </block>
+  </view> 
+</view>

@@ -1,0 +1,29 @@
+
+
+<!-- form -->
+<view class="page_form">
+<view class="box">
+  <!-- item -->
+  <view class="item">
+    <view class="title">软件版本号</view>
+    <view class="content">
+        V1.0
+    </view>
+  </view>
+  <!-- item -->
+  <view class="item">
+    <view class="title">开发者</view>
+    <view class="content">
+      夜语
+    </view>
+  </view>
+    <!-- item -->
+    <view class="item">
+    <view class="title">联系方式</view>
+    <view class="content">
+      2023-05-08
+    </view>
+  </view>
+</view>
+</view>
+<!-- form -->

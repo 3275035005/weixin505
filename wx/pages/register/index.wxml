@@ -1,0 +1,46 @@
+<!-- logo -->
+<view class="login_logo flex center">
+      注册
+</view>
+<!-- logo -->
+
+
+<!-- 注册 -->
+<block>
+
+    <!-- form -->
+    <view class="login_form">
+      
+        <view class="login_form__item">
+            <input type="number" placeholder="请输入姓名"  bindinput="getNameValue" class="login_form__input"/>
+        </view>
+        <view class="login_form__item">
+            <input type="number" placeholder="请输入手机号"  bindinput="getPhoneValue" class="login_form__input"/>
+        </view>
+        <view class="login_form__item">
+            <input placeholder="请输入班级"  bindinput="getBanjiValue" class="login_form__input"/>
+        </view>
+        <view class="login_form__item">
+            <input placeholder="请输入专业"  bindinput="getZhuanyeValue" class="login_form__input"/>
+        </view>
+        <view class="login_form__item">
+            <input type="number" placeholder="请输入账号"  bindinput="getUsernameValue" class="login_form__input"/>
+        </view>
+        <view class="login_form__item">
+            <input type="password" placeholder="请输入密码" bindinput="getPasswordValue" class="login_form__input" />
+        </view>
+        <!-- <view class="login_form__item" style="margin-top: 50rpx;">
+          <radio-group bindchange="getTypeValue">
+           <label ><radio value="0" checked/>学生</label>
+           <label style="margin-left: 30rpx;"><radio value="1"/>老师</label>
+          </radio-group>
+          </view> -->
+        <view class="login_form__item">
+            <button bindtap="register_button" class="page_button flex center" style="padding:0; width: 630rpx;">
+                注册
+            </button>
+        </view>
+  
+    </view>
+</block>
+<!-- 注册 -->
